@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Save Current URL",
+  "version": "0.1.0",
+  "description": "Saves the URL of the current tab",
+  "author": "Jasmine Elkins",
+
+  "permissions": [
+    "storage",
+    "declarativeContent",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+
+  "background": {
+    "service_workers": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Save Current URL",
+    "default_icon": "save_icon.png"
+  }
+}
