@@ -9,7 +9,14 @@ addButton.addEventListener("click", function () {
     let url = tabs[0].url;
 
     console.log(url);
+
+    // send url to save in back end: fetch POST
   });
+
+  fetch(`http://localhost:3000/articles`)
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.log(error.message));
 });
 
 // chrome.tabs.onActivated.addListener(function (activeInfo) {

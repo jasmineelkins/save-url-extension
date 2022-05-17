@@ -6,7 +6,7 @@ chrome.runtime.onInstalled.addListener(() => {
   return;
 });
 
-// from Google documentation:
+// from Google documentation: does it do anything?
 async function getCurrentTab() {
   let queryOptions = { active: true, currentWindow: true };
   let [tab] = await chrome.tabs.query(queryOptions);
